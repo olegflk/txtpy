@@ -5,6 +5,21 @@
 #------------------------------------------------------
 # импортируем библиотеки
 
+# -- Проверяем версию python
+import platform 
+print('python_version = ')
+print(platform.python_version())
+
+# = Активируем виртуальное окружение 
+import os 
+myCmd = 'echo "source .venv/bin/activate"' 
+os.system (myCmd)
+n = input('Press any key')
+
+
+
+
+
 from rich import print
 from rich.align import Align
 from rich.console import Console
@@ -80,6 +95,7 @@ print ('========================================= \n')
 print ('В центре таблица - [пример работы библиотеки ] - Table')
 print ('................................................\n')
 
+print ('deactivate') 
 
 
 
