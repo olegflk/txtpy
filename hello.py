@@ -7,19 +7,19 @@
 
 # -- Проверяем версию python
 import platform 
-print('python_version = ')
-print(platform.python_version())
+verpython = platform.python_version()
+print('python_version = \033[01m', verpython, '\033[00m')
 
 # = Активируем виртуальное окружение 
 import os 
-myCmd = 'echo "source .venv/bin/activate"' 
+myCmd = "clear" 
 os.system (myCmd)
-n = input('Press any key')
-
-
-
-
-
+#n = input('Press any key')
+print('=================================================')
+print ('\033[01;033m  source .venv/bin/activate \033[00m                - активировать виртуальное окружение') 
+print ('\033[01;032m  python3 -m venv .venv \033[00m                    - установить виртуальную среду') 
+print ('\033[01;036m  source .pip install -r requirements.txt \033[00m  - подгрузить модули и библиотеки') 
+print('=================================================')
 from rich import print
 from rich.align import Align
 from rich.console import Console
