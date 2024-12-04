@@ -9,17 +9,17 @@ def todo_list():
 
         choice = input("Enter your choice: ")
 
-        if choice == '1':
+        if choice == "1":
             task = input("Enter a task: ")
             tasks.append(task)
-        elif choice == '2':
+        elif choice == "2":
             if tasks:
                 print("Tasks:")
                 for task in tasks:
                     print(task)
             else:
                 print("No tasks.")
-        elif choice == '3':
+        elif choice == "3":
             if tasks:
                 task = input("Enter the task to remove: ")
                 if task in tasks:
@@ -29,9 +29,10 @@ def todo_list():
                     print("Task not found.")
             else:
                 print("No tasks.")
-        elif choice == '4':
+        elif choice == "4":
             break
         else:
             print("Invalid choice. Try again.")
 
-todo_list()AttributeError
+
+todo_list()
