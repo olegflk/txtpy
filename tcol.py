@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import os
+import colorama
 
 os.system("clear")
 print("ВCЕ ЦВЕТА ТЕКСТА  \n")
@@ -34,7 +35,7 @@ print("ВСЕ ЭФФЕКТЫ \n")
 
 print("\033[1mКак поменять ЦВЕТ 1\033[0m")
 print("\033[2mКак поменять ЦВЕТ 2\033[0m")
-print("\033[3mКак поменять ЦВЕТ 3\033[0m") 
+print("\033[3mКак поменять ЦВЕТ 3\033[0m")
 print("\033[4mКак поменять ЦВЕТ 4\033[0m")
 print("\033[5mКак поменять ЦВЕТ 5\033[0m")
 print("\033[6mКак поменять ЦВЕТ 6\033[0m")
@@ -44,7 +45,6 @@ input("Press any key")
 print(" можно также использовать colorama и .")
 print("назначить переменные для  изменения цвета..\n")
 
-import colorama
 
 colorama.init()
 start = "\033[1;31m"
